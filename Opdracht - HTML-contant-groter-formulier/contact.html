@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Contact form</title>
+</head>
+<div class="conteiner">
+
+    <body>
+        <header id="green-background">
+            <!-- hier zet je de code in de body-->
+            <h1>CSS Opdracht</h1>
+            <hr />
+            <nav>
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="black-border">
+
+            <form name="contact" method="POST" data-netlify="true">
+                <p>
+                    <label>Naam: <input type="text" name="name" /></label>
+                </p>
+                <p>
+                    <label>Emailadres: <input type="email" name="email" /></label>
+                </p>
+                <p>
+                    <label>Telefoonnummer: <input type="tel" name="tel" pattern="[0-9]{3}-[0-9]{4}" /></label>
+                </p>
+                <p>
+                    <label>Leeftijd: <input type="number" name="number" /></label>
+                </p>
+                <p>
+                    <label>Geboortedatum: <input type="date" name="date" /></label>
+                </p>
+                <p>
+                <p>Gender</p>
+                <label for="Men">Men<input type="radio" name="gender" value="Men" /></label>
+                <label for="Vrouw">Vrouw<input type="radio" name="gender" value="Vrouw" /></label>
+                </p>
+                <p>
+                <p>Favoriete cuisine:</p>
+                <label for="Frans">Frans</label><input type="checkbox" name="Frans" />
+                <label for="Frans">Italiaans</label><input type="checkbox" name="Italiaans" />
+                <label for="Frans">Spaans</label><input type="checkbox" name="Spaans" />
+                <label for="Frans">Arabish</label><input type="checkbox" name="Arabish" />
+                </p>
+                <p>
+                    <label for="color">Favoriete keur van short</label> <input type="color" name="color" id="">
+                </p>
+                <label for="textarea"> Biografie<textarea name="textarea" id="" cols="30" rows="10"></textarea></label>
+                <p>
+                    <label>Upload je laatste recept : <input type="file" name="file" /></label>
+                </p>
+                <p>
+                    <label>Url naar ons recpten website : <input type="url" name="ul" /></label>
+                </p>
+
+                <p>
+                    <input type="submit" name="submit" value="Submit" />
+                </p>
+                <p>
+                    <input type="reset" name="submit" value="reset" />
+                </p>
+            </form>
+            <a href="about.html">Hier is de pagina over mij</a>
+
+
+        </main>
+
+    </body>
+</div>
+
+</html>
