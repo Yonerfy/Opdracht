@@ -1,0 +1,63 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    width: 500px;
+    
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    
+}
+
+.card {
+    border: 1px solid #888;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
+.card h1 {
+    color: #333;
+    
+}
+
+h1 + p {
+    color: #999999;
+}
+
+ .second-parragraf {
+    color: #555;
+}
+
+.bt-green {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid green;
+    color: green;
+    background-color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.bt-red {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid red;
+    color: red;
+    background-color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
