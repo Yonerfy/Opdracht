@@ -4,29 +4,30 @@ const checksIfSomeoneIsAdult = function (age) {
 }
 
 const tellIfSomeOneIsAdult = function (age) {
-    return (checksIfSomeoneIsAdult(age) == true) ? "Hello there" : "Hey Kiddo";
+    return (checksIfSomeoneIsAdult(age)) ? "Hello there" : "Hey Kiddo";
 }
 console.log(checksIfSomeoneIsAdult(18));
 console.log(tellIfSomeOneIsAdult(18));
 
 const doVATcalculation = function (vat, basePrice) {
-    return basePrice * vat;
+    return basePrice * (vat / 100);
 }
 
 const doVATplusBasePrice = function (vat, basePrice) {
     return doVATcalculation(vat, basePrice) + basePrice;
 }
 
-console.log(doVATplusBasePrice(0.21, 1000));
+console.log(doVATplusBasePrice(21, 1000));
 
 const doVATcalculation2 = function (vat, pricePlusVat) {
-    return pricePlusVat - (pricePlusVat / (vat + 1));
+    return pricePlusVat - (pricePlusVat / ((vat / 100) + 1));
 }
 
 const doVATplusBasePrice2 = function (vat, pricePlusVat) {
     let baseVat = doVATcalculation2(vat, pricePlusVat);
-    return [baseVat, pricePlusVat];
+    let basePrice = pricePlusVat - baseVat;
+    return [baseVat, basePrice];
 }
 
-console.log(doVATplusBasePrice2(0.21, 1210));
+console.log(doVATplusBasePrice2(21, 1210));
 
