@@ -1,0 +1,14 @@
+
+// Variables
+$secundary-color:#ecffe9;
+$black-color:#090b08;
+$primary-color:#97d279;
+$primary-color-light:#c0eea9;
+$padding-20px : 20px;
+
+// Mixin
+@mixin text  {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}

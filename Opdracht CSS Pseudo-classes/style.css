@@ -1,0 +1,72 @@
+.link-hover {
+    font-size: 25px;
+    text-decoration: none;
+    color: tomato;
+}
+
+.link-hover:hover {
+    font-weight: bold;
+    color: lightblue;
+}
+
+.link-active:active {
+    font-style: italic;
+    color: red;
+
+}
+.link-active {
+    font-size: 25px;
+    text-decoration: none;
+}
+.link-visited{
+    font-size: 25px;
+    text-decoration: none;
+}
+.link-visited{
+    color: blueviolet;
+}
+.link-visited:visited{
+    color: yellow;
+}
+.focus{
+    border: 1px solid green;
+}
+.focus:focus{
+    font-size: 20px;
+    color: green;
+   
+    border-color: red;
+}
+
+/* NAV */
+nav{
+   
+    display: flex;  
+    background-color: darkblue;
+    justify-content: space-between;
+}
+li {
+    list-style: none;
+}
+li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-bottom: 10px;
+}
+a:hover {
+    background-color: lightblue;
+}
+
+ul li:first-child {
+    margin-left: 0;
+}
+.currentPage {
+  background-color: grey;  
+}
+ li input:focus{
+    border-color: red ;
+}
+li input:active{
+    border: 2px solid greenyellow;
+}
